@@ -6,9 +6,6 @@
 # 4)PNGtoPDF
 # 5)PDFtoJPEG
 # 6)PDFtoPNG
-MSG1 = `./convert_neo.neo`
-
-
 echo "何から何に拡張子を変更したいか選んでください"
 select VAR in "PNGtoPDF"
 do
@@ -17,6 +14,6 @@ do
   #   echo $MSG1
   # fi
   case $VAR in
-    "PNGtoPDF") echo $MSG1 ;;
+    "PNGtoPDF") sh ./convert_neo.sh ;;
   esac
 done
