@@ -14,6 +14,6 @@ echo "$kaisuu 回convertします"
 echo "実行中,,,,,"
 for CNT in `seq 1 +1 $kaisuu`
 do
-  convert $name$CNT.png $name$CNT.jpeg
+  convert $name$CNT.png $name$CNT.jpg
 done
 echo "終了!動作は正常に終了しました."

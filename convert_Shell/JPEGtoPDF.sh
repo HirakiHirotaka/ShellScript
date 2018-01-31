@@ -4,7 +4,7 @@
 # 実行にはsh ./convert_neo.shで行うことができる
 
 echo "保存名の名前の部分を記入してください"
-echo "例) 千本桜1.jpegの場合 「千本桜」"
+echo "例) 千本桜1.jpgの場合 「千本桜」"
 read name
 echo "保存名は $name です"
 echo "convertする回数を入力してください"
@@ -14,7 +14,7 @@ echo "$kaisuu 回convertします"
 echo "実行中,,,,,"
 for CNT in `seq 1 +1 $kaisuu`
 do
-  convert $name$CNT.jpeg $name$CNT.pdf
+  convert $name$CNT.jpg $name$CNT.pdf
 done
 echo "終了!動作は正常に終了しました."
 echo "PDFを一つのPDFにまとめています"
