@@ -7,9 +7,9 @@
 # 5)PDFtoJPEG
 # 6)PDFtoPNG
 echo "どの拡張子を変更したいかメニューの数字を選んでください"
-select VAR in "JPEGtoPDF" "JPEGtoPNG" "PNGtoPDF" "PNGtoJPEG" "PDFtoJPEG" "PDFtoPNG"
+select VAR in "JPEGtoPDF" "JPEGtoPNG" "PNGtoPDF" "PNGtoJPEG" "PDFtoJPEG" "PDFtoPNG" "EXIT"
 do
-  echo "あなたが選んだのは $VAR です.実行画面に移ります."
+  echo "あなたが選んだのは $VAR です."
   case $VAR in
     "JPEGtoPDF") sh ./JPEGtoPDF.sh ;;
     "JPEGtoPNG") SH ./JPEGtoPNG.sh ;;
@@ -17,5 +17,6 @@ do
     "PNGtoJPEG") sh ./PNGtoJPEG.sh ;;
     "PDFtoPNG") sh ./PDFtoPNG.sh ;;
     "PDFtoJPEG") sh ./PDFtoJPEG.sh ;;
+    "EXIT") break
   esac
 done
