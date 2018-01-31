@@ -6,14 +6,11 @@
 # 4)PNGtoPDF
 # 5)PDFtoJPEG
 # 6)PDFtoPNG
-echo "何から何に拡張子を変更したいか選んでください"
-select VAR in "PNGtoPDF"
+echo "どの拡張子を変更したいかメニューの数字を選んでください"
+select VAR in "JPEGtoPDF" "JPEGtoPNG" "PNGtoPDF" "PNGtoJPEG" "PDFtoJPEG" "PDFtoPNG"
 do
-  echo "あなたが選んだのは $VAR です"
-  # if [$VAR = "PNGtoPDF"]; then
-  #   echo $MSG1
-  # fi
+  echo "あなたが選んだのは $VAR です.実行画面に移ります."
   case $VAR in
-    "PNGtoPDF") sh ./convert_neo.sh ;;
+    "PNGtoPDF") sh ./PNGtoPDF.sh ;;
   esac
 done
